@@ -1,12 +1,26 @@
 import styled, { keyframes } from "styled-components";
 
 export const Container = styled.div`
-    padding: 0 10rem;
+    padding: 0 6rem;
     background: #f7f7f7;
     height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
+
+    .backPage {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        padding: 1rem 0;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        width: max-content;
+
+        :hover {
+            transform: scale(1.1);
+        }
+    }
 
     .containerCarousel {
         display: flex;
@@ -75,7 +89,7 @@ export const Container = styled.div`
 
 export const ContainerWrapper = styled.div`
     display: flex;
-    gap: 5rem;
+    gap: 3rem;
 `;
 
 export const ContainerDescription = styled.div`

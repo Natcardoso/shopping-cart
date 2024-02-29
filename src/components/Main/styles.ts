@@ -3,6 +3,7 @@ import styled, { keyframes } from "styled-components";
 export const Container = styled.div`
     padding: 8rem;
     background: #f7f7f7;
+    height: 100%;
 
     .qnt {
         display: block;
@@ -14,6 +15,7 @@ export const ContainerCard = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 1rem;
+    height: 100%;
 `;
 
 export const Card = styled.div`
@@ -30,8 +32,7 @@ export const Card = styled.div`
     box-shadow: rgb(216 216 216) 2px 2px 8px;
 
     :hover {
-        box-shadow: #000 2px 2px 8px;
-        border: 1px solid #000;
+        box-shadow: rgb(104 104 104) 0px 0px 9px;
     }
 
     .divImg {
@@ -58,6 +59,7 @@ export const Card = styled.div`
         gap: 1rem;
 
         span:nth-child(2) {
+            font-weight: 500;
             font-size: 1rem;
             color: #595959;
         }
@@ -142,7 +144,7 @@ export const ContainerSearch = styled.div`
     align-items: center;
     border: 2px solid #000;
     padding: 0.5rem 1rem;
-    border-radius: 5rem;
+    border-radius: 4px;
     width: 30%;
     gap: 0.5rem;
     margin-bottom: 2rem;
@@ -159,6 +161,25 @@ export const ContainerSearch = styled.div`
     }
 
     input::placeholder {
-        color: #000;
+        color: #8b8a8a;
+        font-size: 1rem;
+    }
+`;
+
+export const ContainerEmptyState = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 400;
+
+    span {
+        margin-top: -4rem;
+    }
+
+    p {
+        font-weight: bolder;
     }
 `;

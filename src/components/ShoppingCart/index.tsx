@@ -18,7 +18,6 @@ export const ShoppingCart = ({
     openModalCompletePay,
 }: Props) => {
     const { shoppingCart } = useContext(ProductsContext);
-
     const navigate = useNavigate();
 
     const sumPrice = shoppingCart.map((cart) => {

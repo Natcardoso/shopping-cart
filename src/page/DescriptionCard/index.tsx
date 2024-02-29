@@ -15,8 +15,9 @@ import {
     TbShoppingCartPlus,
     TbTruckDelivery,
 } from "react-icons/tb";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { AiOutlineLoading } from "react-icons/ai";
+import { IoMdArrowRoundBack } from "react-icons/io";
 
 interface Attribute {
     value_name: string;
@@ -37,6 +38,7 @@ type IDescription = {
 };
 
 export const DescriptionCard = () => {
+    const navigate = useNavigate();
     const [detail, setDetail] = useState<IDetailProduct>();
     const [qnt, setQnt] = useState(0);
     const idParams = useParams();
@@ -81,6 +83,10 @@ export const DescriptionCard = () => {
 
     return (
         <Container>
+            <div className="backPage" onClick={() => navigate("/")}>
+                <IoMdArrowRoundBack />
+                <span>Voltar</span>
+            </div>
             {loading ? (
                 <ContainerLoading>
                     <AiOutlineLoading />
@@ -101,7 +107,6 @@ export const DescriptionCard = () => {
                             );
                         })}
                     </Carousel>
-
                     <ContainerDescription>
                         <div className="description">
                             <span className="title">{title}</span>
