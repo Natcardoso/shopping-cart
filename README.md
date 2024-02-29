@@ -1,7 +1,4 @@
-# shopping-card
-
-
-
+# ShopCart - Loja de celulares
 Esse projeto foi desenvolvido para as organizações do dia a dia, com listas de afazeres.
 
 ## Screenshots
@@ -16,11 +13,15 @@ Esse projeto foi desenvolvido para as organizações do dia a dia, com listas de
 
 ## Vídeo de apresentação
 
+## 🚀 Tecnologias
 
-## Stack utilizada
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-**Front-end:** React, Typescript, Styled-Components
-
+- HTML
+- Styled-Components
+- Typescript
+- React
+- Git, Github (actions, pages)
 
 ## Funcionalidades
 
@@ -29,30 +30,6 @@ Esse projeto foi desenvolvido para as organizações do dia a dia, com listas de
 - Adiciona nos favoritos
 - Descrição dos produtos
 
+---
 
-## Rodando localmente
-
-Clone o projeto
-
-```bash
-  git clone https://github.com/Natcardoso/shopping-card.git
-```
-
-Entre no diretório do projeto
-
-```bash
-  cd my-project
-```
-
-Instale as dependências
-
-```bash
-  npm install
-```
-
-Inicie o servidor
-
-```bash
-  npm run start
-```
-
+Feito com ♥ by Rocketseat :wave: [Participe da nossa comunidade!](https://discord.gg/rocketseat)
