@@ -8,10 +8,9 @@
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- HTML
-- Styled-Components
-- Typescript
 - React
+- Typescript
+- Styled-Components
 - Git, Github (actions, pages)
 
 ## 📄 Funcionalidades
