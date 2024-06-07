@@ -17,7 +17,10 @@ export const Header = () => {
     return (
         <>
             <Container>
-                <div className="divLogo" onClick={() => navigate("/")}>
+                <div
+                    className="divLogo"
+                    onClick={() => navigate("/shopping-card")}
+                >
                     <BsShop />
                     <div>Shopcart</div>
                 </div>
