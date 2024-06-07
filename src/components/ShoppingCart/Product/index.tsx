@@ -10,8 +10,7 @@ type Props = {
 };
 
 export const Product = ({ product, index }: Props) => {
-    const { shoppingCart, setShoppingCart, setSubTotal, subTotal } =
-        useContext(ProductsContext);
+    const { shoppingCart, setShoppingCart } = useContext(ProductsContext);
     let sumPrice = 0;
 
     if (product.quantity > 1) {
