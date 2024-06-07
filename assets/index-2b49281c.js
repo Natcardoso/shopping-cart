@@ -392,7 +392,7 @@ Error generating stack: `+o.message+`
         font-size: 1.5rem;
         font-weight: 800;
     }
-`,T1=({isClose:e})=>(setTimeout(()=>{e()},4e3),x.jsx(_1,{children:x.jsxs(O1,{children:[x.jsx(Sv,{}),x.jsx("span",{children:"Compra finalizada com sucesso!"})]})})),I1=()=>{const{shoppingCart:e}=R.useContext(Ln),[t,n]=R.useState(!1),[r,i]=R.useState(!1),o=ll();return x.jsxs(x.Fragment,{children:[x.jsxs(fv,{children:[x.jsxs("div",{className:"divLogo",onClick:()=>o("/"),children:[x.jsx(xv,{}),x.jsx("div",{children:"Shopcart"})]}),x.jsxs(dv,{children:[x.jsx(wv,{onClick:()=>o("/favoritos")}),x.jsxs("div",{className:"cart",onClick:()=>n(!0),children:[x.jsx("div",{className:"qntProducts",children:x.jsx("span",{children:e.length})}),x.jsx(vv,{})]})]}),x.jsx(E1,{openModalCompletePay:()=>i(!0),isOpen:t,isClose:()=>n(!1)})]}),r&&x.jsx(T1,{isClose:()=>i(!1)})]})},L1=cv`
+`,T1=({isClose:e})=>(setTimeout(()=>{e()},4e3),x.jsx(_1,{children:x.jsxs(O1,{children:[x.jsx(Sv,{}),x.jsx("span",{children:"Compra finalizada com sucesso!"})]})})),I1=()=>{const{shoppingCart:e}=R.useContext(Ln),[t,n]=R.useState(!1),[r,i]=R.useState(!1),o=ll();return x.jsxs(x.Fragment,{children:[x.jsxs(fv,{children:[x.jsxs("div",{className:"divLogo",onClick:()=>o("/shopping-card"),children:[x.jsx(xv,{}),x.jsx("div",{children:"Shopcart"})]}),x.jsxs(dv,{children:[x.jsx(wv,{onClick:()=>o("/favoritos")}),x.jsxs("div",{className:"cart",onClick:()=>n(!0),children:[x.jsx("div",{className:"qntProducts",children:x.jsx("span",{children:e.length})}),x.jsx(vv,{})]})]}),x.jsx(E1,{openModalCompletePay:()=>i(!0),isOpen:t,isClose:()=>n(!1)})]}),r&&x.jsx(T1,{isClose:()=>i(!1)})]})},L1=cv`
     body {
         height: 100vh;
     }
