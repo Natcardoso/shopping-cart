@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import { useContext } from "react";
 import { Container, ContainerNoLike } from "./styles";
 import { ProductsContext } from "../../context";
 import { CardComponent } from "../../components/Main/Card";

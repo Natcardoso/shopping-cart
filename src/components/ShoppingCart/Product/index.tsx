@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { TbTrash } from "react-icons/tb";
 import { HiMinus } from "react-icons/hi";
 import { BiPlus } from "react-icons/bi";

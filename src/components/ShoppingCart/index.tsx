@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import { useContext } from "react";
 import { Container, Content, EmptyBox, Footer, Main } from "./styles";
 import { IoClose } from "react-icons/io5";
 import { ProductsContext } from "../../context";

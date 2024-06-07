@@ -1,6 +1,5 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import { Container, ContainerSvg } from "./styles";
-import { CgSearch } from "react-icons/cg";
 import { TbShoppingCart } from "react-icons/tb";
 import { FaRegHeart } from "react-icons/fa";
 import { BsShop } from "react-icons/bs";

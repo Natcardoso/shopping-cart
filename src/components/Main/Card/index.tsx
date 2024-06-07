@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import { Heart } from "../../../assets/heart";
 import { Like, Card } from "../styles";
 import { useNavigate } from "react-router-dom";

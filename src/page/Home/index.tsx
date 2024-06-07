@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Main } from "../../components/Main";
 import { IProducts, ProductsContext } from "../../context";
 
