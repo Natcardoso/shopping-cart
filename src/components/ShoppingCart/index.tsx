@@ -38,7 +38,7 @@ export const ShoppingCart = ({
 
     const handleGoToPage = () => {
         isClose();
-        navigate("/");
+        navigate("/shopping-card");
     };
 
     const handleCompletedPurchase = () => {
