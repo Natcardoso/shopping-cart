@@ -40,7 +40,7 @@ export const ContainerSvg = styled.div`
     gap: 1rem;
 
     svg {
-        width: 2rem;
+        width: 3rem;
         height: 2rem;
         transition: all 0.2s;
         cursor: pointer;

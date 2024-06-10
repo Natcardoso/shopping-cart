@@ -85,7 +85,7 @@ export const DescriptionCard = () => {
         <Container>
             <div
                 className="backPage"
-                onClick={() => navigate("/shopping-card")}
+                onClick={() => navigate("/shopping-cart")}
             >
                 <IoMdArrowRoundBack />
                 <span>Voltar</span>

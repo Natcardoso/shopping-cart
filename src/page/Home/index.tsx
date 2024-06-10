@@ -5,9 +5,7 @@ import { IProducts, ProductsContext } from "../../context";
 export const Home = () => {
     const { products, setProducts } = useContext(ProductsContext);
     const [isLoading, setIsLoading] = useState(false);
-    const initialProducts = JSON.parse(
-        localStorage.getItem("products") || "[]"
-    );
+    const initialProducts = JSON.parse(localStorage.getItem("products") || "");
 
     const getApiProducts = () => {
         setIsLoading(true);

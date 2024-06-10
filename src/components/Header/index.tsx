@@ -9,24 +9,37 @@ import { ProductsContext } from "../../context";
 import { ModalCompletePay } from "../ModalCompletePay";
 
 export const Header = () => {
-    const { shoppingCart } = useContext(ProductsContext);
+    const { shoppingCart, products } = useContext(ProductsContext);
     const [openCart, setOpenCart] = useState(false);
     const [openModalCompletePay, setOpenModalCompletedPay] = useState(false);
     const navigate = useNavigate();
+    const qntLike = products.reduce(
+        (count, product) => count + (product.like ? 1 : 0),
+        0
+    );
 
     return (
         <>
             <Container>
                 <div
                     className="divLogo"
-                    onClick={() => navigate("/shopping-card")}
+                    onClick={() => navigate("/shopping-cart")}
                 >
                     <BsShop />
                     <div>Shopcart</div>
                 </div>
 
                 <ContainerSvg>
-                    <FaRegHeart onClick={() => navigate("/favoritos")} />
+                    <div
+                        className="cart"
+                        onClick={() => navigate("/favoritos")}
+                    >
+                        <div className="qntProducts">
+                            <span>{qntLike}</span>
+                        </div>
+                        <FaRegHeart />
+                    </div>
+
                     <div className="cart" onClick={() => setOpenCart(true)}>
                         <div className="qntProducts">
                             <span>{shoppingCart.length}</span>

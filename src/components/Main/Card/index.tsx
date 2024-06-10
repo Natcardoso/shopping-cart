@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Heart } from "../../../assets/heart";
 import { Like, Card } from "../styles";
 import { useNavigate } from "react-router-dom";
@@ -13,6 +13,7 @@ type Props = {
 export const CardComponent = ({ product, index }: Props) => {
     const { setShoppingCart, shoppingCart, products, setProducts } =
         useContext(ProductsContext);
+    const [like, setLike] = useState(product.like);
     const navigate = useNavigate();
     const stringReal = product.price.toLocaleString("pt-br", {
         style: "currency",
@@ -38,19 +39,18 @@ export const CardComponent = ({ product, index }: Props) => {
     };
 
     const handleClickLike = () => {
+        setLike(!like);
         const isLiked = product.like;
         const updatedProduct = { ...product, like: !isLiked };
-
         const updatedCart = [...products];
         updatedCart[index] = updatedProduct;
-
         setProducts(updatedCart);
     };
 
     return (
         <Card>
             <Like
-                style={{ color: product.like ? "#000" : "#b6b6b6" }}
+                style={{ color: like ? "#000" : "#b6b6b6" }}
                 onClick={handleClickLike}
             >
                 <Heart />

@@ -1,7 +1,7 @@
-import { useContext } from "react";
+import { Key, useContext } from "react";
 import { Container, Content, EmptyBox, Footer, Main } from "./styles";
 import { IoClose } from "react-icons/io5";
-import { ProductsContext } from "../../context";
+import { IProducts, ProductsContext } from "../../context";
 import { Product } from "./Product";
 import emptyBox from "../../assets/empty-box.svg";
 import { useNavigate } from "react-router-dom";
@@ -38,7 +38,7 @@ export const ShoppingCart = ({
 
     const handleGoToPage = () => {
         isClose();
-        navigate("/shopping-card");
+        navigate("/shopping-cart");
     };
 
     const handleCompletedPurchase = () => {
@@ -55,17 +55,19 @@ export const ShoppingCart = ({
                     <IoClose onClick={isClose} />
                     <span>Carrinho</span>
                 </header>
-                <Main empty={shoppingCart.length == 0}>
+                <Main empty={shoppingCart.length === 0}>
                     {shoppingCart.length > 0 ? (
-                        shoppingCart.map((product, index) => {
-                            return (
-                                <Product
-                                    product={product}
-                                    key={index}
-                                    index={index}
-                                />
-                            );
-                        })
+                        shoppingCart.map(
+                            (product: IProducts, index: number) => {
+                                return (
+                                    <Product
+                                        product={product}
+                                        key={index}
+                                        index={index}
+                                    />
+                                );
+                            }
+                        )
                     ) : (
                         <EmptyBox>
                             <img src={emptyBox} />
